@@ -2,12 +2,39 @@
 
 Текст задания на разработку - поиск самых выгодных курсов валют 
 
+1. Реализовать загрузку курсов, которые находятся в файле bm_rates.dat 
+   <br/><br/>
+   Файл сосит из набора строк типа "118;89;454;66.82258603;1;123638.43;0.2506;1", где первое число - идентификатор отправляемой валюты, второе - идентификатор получаемой валюты, четвертое - курс отправления, пятое - курс получения.
+   <br/><br/>
+   Необходимо найти максимально выгодный курс для каждой пары валют, то есть курс того обменника, который стоит на первом месте для каждой валютной пары.
+   <br/><br/>
+   Все выгодные курсы записывать в базу данных.
+   <br/><br/>
+
+2. Написать REST API для получения выгодных курсов.
+   <br/><br/>
+   Реализовать два метода:
+   <br/><br/>
+   <b>GET /courses</b> - получение массива всех курсов с фильтрацией
+   <br/><br/>
+   Возможные фильтры:
+   <br/><br/>
+   - отправляемая валюта
+   <br/><br/>
+   - получаемая валюта
+   <br/><br/>
+   
+   <b>GET /course/$send_currency/$recive_currency</b>, где $send_currency - отправляемая валюта, $recive_currency - получаемая валюта.
+   <br/><br/>
+   Все запросы должны подписываться токеном Bearer.
+   <br/><br/>
+   Язык программирования PHP и фреймворк Laravel.
+
 ## Screens
 
 <p align="center">
-<a href="https://github.com/makklays/currencies/blob/main/public/img/1.png">
 <img src="https://github.com/makklays/currencies/blob/main/public/img/1.png" alt="Screen 1">
-</a><br/>
+<br/>
 <a href="https://github.com/makklays/currencies/blob/main/public/img/2.png">
 <img src="https://github.com/makklays/currencies/blob/main/public/img/2.png" alt="Screen 2">
 </a><br/>
