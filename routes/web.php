@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 })->name('/');
 
-//
-Route::get('/courses/upload', 'App\Http\Controllers\Web\UploadController@upload')->name('upload');
-Route::post('/courses/upload_process', 'App\Http\Controllers\Web\UploadController@upload_process')->name('upload_process');
+// for upload file with courses
+Route::prefix('courses')->group(function () {
+    Route::get('/upload', 'App\Http\Controllers\Web\UploadController@upload')->name('upload');
+    Route::post('/upload_process', 'App\Http\Controllers\Web\UploadController@upload_process')->name('upload_process');
+});

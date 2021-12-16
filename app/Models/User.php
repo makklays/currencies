@@ -1,4 +1,9 @@
 <?php
+/**
+ * Date: 15.12.2021
+ * Author: Alexander Kuziv
+ * Email: alexander@makklays.com.ua
+ */
 
 namespace App\Models;
 

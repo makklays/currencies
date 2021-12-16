@@ -1,4 +1,3 @@
-
 <?php if (Session::has('flash_message')): ?>
 <div style="margin: 20px 0;">
     <?php if (Session::has('flash_message')): ?>

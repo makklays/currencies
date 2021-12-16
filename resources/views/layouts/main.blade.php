@@ -27,6 +27,7 @@
     <script type="text/javascript" src='<?=config('app.url')?>/js/jquery-3.4.0.min.js'></script>
     <script type="text/javascript" src='<?=config('app.url')?>/css/bootstrap4/js/bootstrap.min.js'></script>
     <script type="text/javascript" src="<?=config('app.url')?>/js/jquery-ui.js"></script>
+
 </head>
 <body>
 <main role="main">
