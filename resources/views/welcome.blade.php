@@ -19,7 +19,7 @@
 
             <a href="{{ route('upload') }}" >Upload courses to DB</a>
             <br/><br/>
-            <a href="{{ route('index') }}" >View courses</a>
+            <a href="{{ route('courses_index') }}" >View courses</a>
 
         </div>
     </div>
