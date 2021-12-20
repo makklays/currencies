@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    
+
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><i class="fa fa-home" aria-hidden="true"></i> Currencies</li>
@@ -18,6 +18,8 @@
         <div class="col-md-4">
 
             <a href="{{ route('upload') }}" >Upload courses to DB</a>
+            <br/><br/>
+            <a href="{{ route('index') }}" >View courses</a>
 
         </div>
     </div>

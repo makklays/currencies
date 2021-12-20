@@ -21,4 +21,6 @@ Route::get('/', function () {
 Route::prefix('courses')->group(function () {
     Route::get('/upload', 'App\Http\Controllers\Web\UploadController@upload')->name('upload');
     Route::post('/upload_process', 'App\Http\Controllers\Web\UploadController@upload_process')->name('upload_process');
+
+    Route::get('/', 'App\Http\Controllers\Web\UploadController@index')->name('courses_index');
 });

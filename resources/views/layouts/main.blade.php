@@ -20,9 +20,9 @@
 
     <link rel="shortcut icon" href="<?=config('app.url')?>/favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/bootstrap4/css/bootstrap.min.css?'.time()) }}" />
-    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/fontawesome5/css/all.css?'.time()) }}" />
-    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/jquery-ui.css?'.time()) }}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/bootstrap4/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/fontawesome5/css/all.css') }}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{{ asset('/css/jquery-ui.css') }}" />
 
     <script type="text/javascript" src='<?=config('app.url')?>/js/jquery-3.4.0.min.js'></script>
     <script type="text/javascript" src='<?=config('app.url')?>/css/bootstrap4/js/bootstrap.min.js'></script>
@@ -32,12 +32,14 @@
 <body>
 <main role="main">
 
-    <div class="container">
+    <div id="app" class="container">
         <h1>CURRENCIES</h1>
 
         @include('partials.flash')
         @yield('content')
     </div>
+
+    @yield('scripts')
 
 </main>
 </body>

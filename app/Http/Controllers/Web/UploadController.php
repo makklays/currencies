@@ -80,6 +80,7 @@ class UploadController extends Controller
         // truncate data
         Course::truncate();
 
+
         // insert to DB
         foreach($arr_currencies as $course) {
             Course::insertGetId([
@@ -95,5 +96,11 @@ class UploadController extends Controller
                 'flash_type' => 'success',
                 'flash_message' => 'Successfully inserted '.count($arr_currencies).' courses.'
             ]);
+    }
+
+    //
+    public function index()
+    {
+        return view('courses.index');
     }
 }
