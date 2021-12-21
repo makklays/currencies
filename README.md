@@ -66,7 +66,7 @@ Text of task on development - search best profitable exchange rates
    <br/><br/>
    PHP programming language and Laravel framework.
    <br/>
-###А также на Front-end
+###And also on the Front-end
    3. Make data mappings (REST API) on a web page <b>/courses</b> (with the page parameter - page number. Example: /courses?page=12) using Vue.js.
 
 ## Screens
