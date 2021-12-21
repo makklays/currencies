@@ -4,7 +4,7 @@
 
 1. Реализовать загрузку курсов, которые находятся в файле bm_rates.dat 
    <br/><br/>
-   Файл сосит из набора строк типа "118;89;454;66.82258603;1;123638.43;0.2506;1", где первое число - идентификатор отправляемой валюты, второе - идентификатор получаемой валюты, четвертое - курс отправления, пятое - курс получения.
+   Файл состоит из набора строк типа "118;89;454;66.82258603;1;123638.43;0.2506;1", где первое число - идентификатор отправляемой валюты, второе - идентификатор получаемой валюты, четвертое - курс отправления, пятое - курс получения.
    <br/><br/>
    Необходимо найти максимально выгодный курс для каждой пары валют, то есть курс того обменника, который стоит на первом месте для каждой валютной пары.
    <br/><br/>
@@ -29,9 +29,45 @@
    Все запросы должны подписываться токеном Bearer.
    <br/><br/>
    Язык программирования PHP и фреймворк Laravel.
+   <br/>
+###А также на Front-end
+   
+3. Сделать отображения данных (REST API) на web-странице <b>/courses</b> (c параметром page - номер страницы. Пример: /courses?page=12) с использованием Vue.js.
+
+## EN: Task
+
+Text of task on development - search best profitable exchange rates
+
+1. Implement loading of courses that are in the file bm_rates.dat
    <br/><br/>
-   ###А также на Front-end
-   Сделать отображения данных (REST API) на web-странице <b>/courses</b> (c параметром page - номер страницы. Пример: /courses?page=12) с использованием Vue.js.
+   The file consists of a set of lines like "118;89;454;66.82258603;1;123638.43;0.2506;1", где первое число - идентификатор отправляемой валюты, второе - идентификатор получаемой валюты, четвертое - курс отправления, пятое - курс получения.
+   <br/><br/>
+   It is necessary to find the most favorable rate for each pair of currencies, that is, the rate of the exchanger that comes first for each currency pair.
+   <br/><br/>
+   Record all profitable rates in the database.
+   <br/><br/>
+
+2. Write a REST API to get profitable courses.
+   <br/><br/>
+   Implement two methods:
+   <br/><br/>
+   <b>GET /courses</b> - getting an array of all courses with filtering
+   <br/><br/>
+   Possible filters:
+   <br/><br/>
+    - sent currency
+      <br/><br/>
+    - received currency
+      <br/><br/>
+
+   <b>GET /course/$send_currency/$recive_currency</b>, where $send_currency - sent currency , $recive_currency - received currency .
+   <br/><br/>
+   All requests must be signed with the Bearer token.
+   <br/><br/>
+   PHP programming language and Laravel framework.
+   <br/>
+###А также на Front-end
+   3. Make data mappings (REST API) on a web page <b>/courses</b> (with the page parameter - page number. Example: /courses?page=12) using Vue.js.
 
 ## Screens
 
